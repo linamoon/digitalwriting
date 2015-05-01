@@ -1,0 +1,94 @@
+<!doctype html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<title>Good Morning - a Poem by Anand Jayanti</title>
+</head>
+
+<body>
+
+	<ul id="nav">
+		<li><a href="#first" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#second" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#third" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#fourth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#fifth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#sixth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	</ul>
+	
+	<div id="first">
+		<div class="story"><div class="bg"></div>
+	    	<div class="float-left">
+				<h2>The sun says hello<br>To all those below;</h2>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#first-->
+	
+	<div id="second">
+		<div class="story"><div class="bg"></div>
+	    	<div class="float-right">
+	            <h2>Warms up the earth<br>and melts all the snow.</h2>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#second-->
+	
+	<div id="third">
+		<div class="story">
+	    	<div class="float-right">
+	        	<h2>Birds are aflutter,<br>There’s dew in the gutter.</h2>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#third-->
+	
+	<div id="fourth">
+		<div class="story">
+	    	<div class="float-left">
+	        	<h2>Children dream gently–<br>While Mom spreads butter.</h2>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#fourth-->
+
+	<div id="fifth">
+		<div class="story"><div class="bg"></div>
+	    	<div class="float-left">
+	        	<h2>But if you find too bright<br>This good morning light,</h2>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#fifth-->
+
+	<div id="sixth">
+		<div class="story"><div class="bg"></div>
+	    	<div class="float-right">
+	        	<h2>I’ll be back soon&mdash;<br>To wish you goodnight.</h2>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#sixth-->
+
+</body>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$('#nav').localScroll(800);
+	
+	//.parallax(xPosition, speedFactor, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('#first').parallax("50%", 0.4);
+	$('#second').parallax("50%", 0.4);
+	$('#third').parallax("50%", 0.4);
+	$('#fourth').parallax("50%", 0.4);
+	$('#fifth').parallax("50%", 0.4);
+	$('#sixth').parallax("50%", 0.4);
+
+})
+
+</script>
+
+</html>
